@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    /**/int a, b;
+    printf("a = ");
+    scanf_s("%d", &a);
+    printf("b = ");
+    scanf_s("%d", &b);
+    int S = a * b;
+    int P = 2 * (a + b);
+    printf("S = %d\n P = %d", S, P);
+
+    int d;
+    printf("d = ");
+    scanf_s("%d", &d);
+    double L = 3.14 * d;
+    printf("L = %lf", L);
+    return 0;
+
+    double x, y;
+    printf("x = ");
+    scanf_s("%lf", &x);
+    printf("y = ");
+    scanf_s("%lf", &y);
+    printf("%lf\n", pow(x, 2) + pow(y, 2));
+    printf("%lf\n", pow(x, 2) - pow(y, 2));
+    printf("%lf\n", pow(x, 2) * pow(y, 2));
+    printf("%lf", pow(x, 2) / pow(y, 2));
+
+    double c, e;
+    printf("c = ");
+    scanf_s("%lf", &c);
+    printf("e = ");
+    scanf_s("%lf", &e);
+    printf("%lf\n", sqrt(c) + sqrt(e));
+    printf("%lf\n", sqrt(c) - sqrt(e));
+    printf("%lf\n", sqrt(c) * sqrt(e));
+    printf("%lf", sqrt(c) / sqrt(e));
+}
