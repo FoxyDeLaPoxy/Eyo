@@ -17,7 +17,6 @@ int main()
     scanf_s("%d", &d);
     double L = 3.14 * d;
     printf("L = %lf", L);
-    return 0;
 
     double x, y;
     printf("x = ");
@@ -38,4 +37,5 @@ int main()
     printf("%lf\n", sqrt(c) - sqrt(e));
     printf("%lf\n", sqrt(c) * sqrt(e));
     printf("%lf", sqrt(c) / sqrt(e));
+    return 0;
 }
