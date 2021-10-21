@@ -3,18 +3,18 @@
 
 int main()
 {
-    /**/int a, b;
+    double a, b;
     printf("a = ");
-    scanf_s("%d", &a);
+    scanf_s("%lf", &a);
     printf("b = ");
-    scanf_s("%d", &b);
+    scanf_s("%lf", &b);
     int S = a * b;
     int P = 2 * (a + b);
-    printf("S = %d\n P = %d", S, P);
+    printf("S = %lf\n P = %lf", S, P);
 
-    int d;
+    double d;
     printf("d = ");
-    scanf_s("%d", &d);
+    scanf_s("%lf", &d);
     double L = 3.14 * d;
     printf("L = %lf", L);
 
@@ -33,9 +33,9 @@ int main()
     scanf_s("%lf", &c);
     printf("e = ");
     scanf_s("%lf", &e);
-    printf("%lf\n", sqrt(c) + sqrt(e));
-    printf("%lf\n", sqrt(c) - sqrt(e));
-    printf("%lf\n", sqrt(c) * sqrt(e));
-    printf("%lf", sqrt(c) / sqrt(e));
+    printf("%lf\n", fabs(c) + fabs(e));
+    printf("%lf\n", fabs(c) - fabs(e));
+    printf("%lf\n", fabs(c) * fabs(e));
+    printf("%lf", fabs(c) / fabs(e));
     return 0;
 }
